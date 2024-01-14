@@ -1,6 +1,5 @@
 from flask import Flask, request, redirect, render_template
 import math
-from server import keep_alive
 
 app = Flask(__name__)
 
@@ -62,5 +61,4 @@ def youbi():
 
 app.run(host='0.0.0.0')
 
-# ウェブサーバーを起動する
-keep_alive()
+
