@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="static/css/warikan.css" rel="stylesheet" type="text/css"/>
+  <title>Document</title>
+</head>
+<body>
+  <form action="/warikan2" method="GET">
+    <h1>人数: </h1>
+    <input type="number" name="ninzu">
+    <br><br>
+    <h1>合計金額: </h1>
+    <input type="number" name="gokei">
+    <br><br>
+    <h1>単位: </h1>
+    <select name="tani" required>
+      <option value="">選択</option>
+      <option value="50">50円</option>
+      <option value="100">100円</option>
+      <option value="500">500円</option>
+      <option value="1000">1000円</option>
+      <option value="5000">5000円</option>
+      <option value="10000">10000円</option>
+    </select>
+    <br><br>
+    <h1>割り勘スタイル: </h1>
+    <select name="style" required>
+      <option value="">選択</option>
+      <option value="1">部長に多く払わせる</option>
+      <option value="2">余りは2次会予算に</option>
+    </select>
+    <br><br>
+    <input type="submit" value="計算する" class="button">
+  </form>
+  <br><br>
+  <a href="/" class="button">戻る</a>
+  <script src="static/js/warikan.js"></script>
+</body>
+</html>
